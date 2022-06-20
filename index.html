@@ -9,6 +9,32 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+  <script type="application/javascript">
+
+  var info = '';
+
+  function check(d) {
+
+    if (info.length == 0) info = prompt('What is the last name of the stake president?');
+    if (btoa(info.toLocaleLowerCase()) === 'cGVjaw==') {
+      
+      // set links
+      $("#day-1").attr('href','https://photos.app.goo.gl/vJijbfjJFZp4u8717');
+      $("#day-2").attr('href','https://photos.app.goo.gl/yfiF1P56RRdTsBDM6');
+      //$("#day-3").attr('href','https://photos.app.goo.gl/n2yKjDRiEaSQo1xv6');
+      $("#day-4").attr('href','https://photos.app.goo.gl/E5aqzvDujprbAXpDA');
+      
+      var url = $("#day-" + d.toString()).attr('href');
+      window.open(url, '_blank');
+
+    } else {
+      info = '';
+    }
+    return false;
+  }
+
+  </script>
+
 </head>
 <body>
 
@@ -22,39 +48,38 @@
     <p class="extra-info">Wednesday June 15th - Saturday June 18th<br/> 
   </div>
   <div id="container" class="container">
-
+    <div class="item">
+      <p class="item-title">Photos: Day 1</p>
+      <p class="item-info">Photos from the first day of trek</p>
+      <p><a id="day-1" href="javascript:check(1);"><span class="material-icons">image</span></a></p>             
+  </div>
+  <div class="item">
+    <p class="item-title">Photos: Day 2</p>
+    <p class="item-info">Photos from the second day of trek</p>
+    <p><a id="day-2" href="javascript:check(2);"><span class="material-icons">image</span></a></p>      
+</div>
+<div class="item">
+  <p class="item-title">Photos: Day 3</p>
+  <p class="item-info">Coming soon ...</p>
+  <!--<p><a id="day-3" href="javascript:check(3);"><span class="material-icons">image</span></a></p>-->          
+</div>
+<div class="item">
+  <p class="item-title">Photos: Day 4</p>
+  <p class="item-info">Photos from last day of trek</p>
+  <p><a id="day-4" href="javascript:check(4);"><span class="material-icons">image</span></a></p>        
+</div>
       <div class="item">
           <p class="item-title">Map</p>
           <p class="item-info">A map of the trek location in south canyon.</p>
           <p><a href="files/Trek_Map.pdf" target="_blank"><span class="material-icons">get_app</span></a></p>          
       </div>
-
-      <div class="item">
-        <p class="item-title">UPDATED: Packing List</p>
-        <p class="item-info">Items required for 2022 Trek.</p>
-        <p><a href="files/Hyrum_Stake_Trek_Packing_Checklist.pdf" target="_blank"><span class="material-icons">get_app</span></a></p>  
-    </div>
-
-    <div class="item">
-        <p class="item-title">Medical Release Form</p>
-        <p class="item-info">Parental Permission Medical Release Form.</p>
-        <p><a href="files/parental_permission_medical_release.pdf" target="_blank"><span class="material-icons">get_app</span></a></p>  
-    </div>
-    <div class="item">
-        <p class="item-title">Clothing List</p>
-        <p class="item-info">List of required clothing for Trek 2022.</p>
-        <p><a href="files/Clothing_List_Trek_2022.docx.pdf" target="_blank"><span class="material-icons">get_app</span></a></p>  
-    </div>
+   
     <div class="item">
       <p class="item-title">Daily Schedule</p>
       <p class="item-info">Day to day Schedule.</p>
       <p><a href="files/Hyrum_Stake_Trek_2022_Daily_Agenda.pdf" target="_blank"><span class="material-icons">get_app</span></a></p>  
   </div>
-  <div class="item">
-    <p class="item-title">Trek Committee Members</p>
-    <p class="item-info">Names and Contact Info for Trek Committees.</p>
-    <p><a href="files/Trek_Committee_Members.pdf" target="_blank"><span class="material-icons">get_app</span></a></p>  
-</div>
+ 
 <div class="item">
   <p class="item-title">HOLD HARMLESS AGREEMENT</p>
   <p class="item-info"></p>
